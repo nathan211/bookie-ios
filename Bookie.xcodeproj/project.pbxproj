@@ -10,9 +10,14 @@
 		2A4FDE7D2BF22B7F004826F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FDE7C2BF22B7F004826F2 /* AppDelegate.swift */; };
 		2A4FDE7F2BF22B7F004826F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FDE7E2BF22B7F004826F2 /* SceneDelegate.swift */; };
 		2A4FDE812BF22B7F004826F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FDE802BF22B7F004826F2 /* ViewController.swift */; };
-		2A4FDE842BF22B7F004826F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4FDE822BF22B7F004826F2 /* Main.storyboard */; };
 		2A4FDE862BF22B82004826F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4FDE852BF22B82004826F2 /* Assets.xcassets */; };
 		2A4FDE892BF22B82004826F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4FDE872BF22B82004826F2 /* LaunchScreen.storyboard */; };
+		2A4FDE982BF22E4E004826F2 /* BookieTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FDE972BF22E4E004826F2 /* BookieTextField.swift */; };
+		2A4FDE9A2BF2304A004826F2 /* BookieButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FDE992BF2304A004826F2 /* BookieButton.swift */; };
+		2A5D7AF32C04B20A0048FB7B /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D7AF22C04B20A0048FB7B /* UIColorExtension.swift */; };
+		2A5D7AF52C04B2630048FB7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D7AF42C04B2630048FB7B /* Constants.swift */; };
+		2A5D7AFC2C04B5BB0048FB7B /* BookieTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D7AFB2C04B5BB0048FB7B /* BookieTitleLabel.swift */; };
+		2A5D7B012C04BCAF0048FB7B /* BookieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D7B002C04BCAF0048FB7B /* BookieImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,15 @@
 		2A4FDE7C2BF22B7F004826F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A4FDE7E2BF22B7F004826F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2A4FDE802BF22B7F004826F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2A4FDE832BF22B7F004826F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A4FDE852BF22B82004826F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A4FDE882BF22B82004826F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A4FDE8A2BF22B82004826F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A4FDE972BF22E4E004826F2 /* BookieTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieTextField.swift; sourceTree = "<group>"; };
+		2A4FDE992BF2304A004826F2 /* BookieButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieButton.swift; sourceTree = "<group>"; };
+		2A5D7AF22C04B20A0048FB7B /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2A5D7AF42C04B2630048FB7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2A5D7AFB2C04B5BB0048FB7B /* BookieTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieTitleLabel.swift; sourceTree = "<group>"; };
+		2A5D7B002C04BCAF0048FB7B /* BookieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,92 @@
 		2A4FDE7B2BF22B7F004826F2 /* Bookie */ = {
 			isa = PBXGroup;
 			children = (
-				2A4FDE7C2BF22B7F004826F2 /* AppDelegate.swift */,
-				2A4FDE7E2BF22B7F004826F2 /* SceneDelegate.swift */,
-				2A4FDE802BF22B7F004826F2 /* ViewController.swift */,
-				2A4FDE822BF22B7F004826F2 /* Main.storyboard */,
-				2A4FDE852BF22B82004826F2 /* Assets.xcassets */,
-				2A4FDE872BF22B82004826F2 /* LaunchScreen.storyboard */,
+				2A4FDE962BF22D79004826F2 /* Utilities */,
+				2A4FDE952BF22D64004826F2 /* Support Files */,
+				2A4FDE942BF22D53004826F2 /* Screens */,
+				2A4FDE932BF22D48004826F2 /* Models */,
+				2A4FDE922BF22D30004826F2 /* Managers */,
+				2A4FDE912BF22CC4004826F2 /* Extensions */,
+				2A4FDE902BF22CB5004826F2 /* Custom Views */,
 				2A4FDE8A2BF22B82004826F2 /* Info.plist */,
 			);
 			path = Bookie;
+			sourceTree = "<group>";
+		};
+		2A4FDE902BF22CB5004826F2 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D7AFF2C04BC990048FB7B /* ImageViews */,
+				2A5D7AFA2C04B5A10048FB7B /* Labels */,
+				2A4FDE972BF22E4E004826F2 /* BookieTextField.swift */,
+				2A4FDE992BF2304A004826F2 /* BookieButton.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2A4FDE912BF22CC4004826F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D7AF22C04B20A0048FB7B /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A4FDE922BF22D30004826F2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2A4FDE932BF22D48004826F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A4FDE942BF22D53004826F2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2A4FDE802BF22B7F004826F2 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2A4FDE952BF22D64004826F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A4FDE852BF22B82004826F2 /* Assets.xcassets */,
+				2A4FDE872BF22B82004826F2 /* LaunchScreen.storyboard */,
+				2A4FDE7C2BF22B7F004826F2 /* AppDelegate.swift */,
+				2A4FDE7E2BF22B7F004826F2 /* SceneDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		2A4FDE962BF22D79004826F2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D7AF42C04B2630048FB7B /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2A5D7AFA2C04B5A10048FB7B /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D7AFB2C04B5BB0048FB7B /* BookieTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		2A5D7AFF2C04BC990048FB7B /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				2A5D7B002C04BCAF0048FB7B /* BookieImageView.swift */,
+			);
+			path = ImageViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +214,6 @@
 			files = (
 				2A4FDE892BF22B82004826F2 /* LaunchScreen.storyboard in Resources */,
 				2A4FDE862BF22B82004826F2 /* Assets.xcassets in Resources */,
-				2A4FDE842BF22B7F004826F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +224,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5D7B012C04BCAF0048FB7B /* BookieImageView.swift in Sources */,
+				2A4FDE9A2BF2304A004826F2 /* BookieButton.swift in Sources */,
 				2A4FDE812BF22B7F004826F2 /* ViewController.swift in Sources */,
 				2A4FDE7D2BF22B7F004826F2 /* AppDelegate.swift in Sources */,
+				2A4FDE982BF22E4E004826F2 /* BookieTextField.swift in Sources */,
+				2A5D7AFC2C04B5BB0048FB7B /* BookieTitleLabel.swift in Sources */,
+				2A5D7AF52C04B2630048FB7B /* Constants.swift in Sources */,
 				2A4FDE7F2BF22B7F004826F2 /* SceneDelegate.swift in Sources */,
+				2A5D7AF32C04B20A0048FB7B /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2A4FDE822BF22B7F004826F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A4FDE832BF22B7F004826F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2A4FDE872BF22B82004826F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +381,6 @@
 				INFOPLIST_FILE = Bookie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +408,6 @@
 				INFOPLIST_FILE = Bookie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
