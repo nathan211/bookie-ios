@@ -12,9 +12,9 @@ class ViewController: UIViewController{
     let appLogoImage = UIImageView(image: UIImage(named: "AppLogo"))
     let appNameLabel = BookieTitleLabel(textAlignment: .left, fontSize: 18)
     let signInLabel = BookieTitleLabel(textAlignment: .left, fontSize: 16)
-    let emailTextField = BookieTextField()
-    let passwordTextField = BookieTextField()
-    let submitButton = BookieButton(color: .systemGreen, title: "Submit")
+    let emailTextField = BookieTextField(placeholder: "Enter your email")
+    let passwordTextField = BookieTextField(placeholder: "Enter your password")
+    let submitButton = BookieButton(color: .black, title: "Submit")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class ViewController: UIViewController{
         
         
         NSLayoutConstraint.activate([
-            appLogoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 220),
+            appLogoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 170),
             appLogoImage.centerXAnchor.constraint(equalTo: view.leadingAnchor, constant: 42),
             appLogoImage.heightAnchor.constraint(equalToConstant: 40),
             appLogoImage.widthAnchor.constraint(equalToConstant: 40)
@@ -55,7 +55,7 @@ class ViewController: UIViewController{
         appNameLabel.text = "Bookie"
         
         NSLayoutConstraint.activate([
-            appNameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 228),
+            appNameLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 178),
             appNameLabel.leadingAnchor.constraint(equalTo: appLogoImage.trailingAnchor, constant: 4),
             appNameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
             appNameLabel.heightAnchor.constraint(equalToConstant: 40),
@@ -66,7 +66,7 @@ class ViewController: UIViewController{
         signInLabel.text = "Sign in"
         
         NSLayoutConstraint.activate([
-            signInLabel.topAnchor.constraint(equalTo: appLogoImage.bottomAnchor, constant: 24),
+            signInLabel.topAnchor.constraint(equalTo: appLogoImage.bottomAnchor, constant: 80),
             signInLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 28),
             signInLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -28),
             signInLabel.heightAnchor.constraint(equalToConstant: 40)
@@ -92,8 +92,6 @@ class ViewController: UIViewController{
     }
     
     func configureSubmitButton() {
-        submitButton.set(color: .black, title: "Submit")
-        
         NSLayoutConstraint.activate([
             submitButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 24),
             submitButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),

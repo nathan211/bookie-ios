@@ -14,8 +14,9 @@ class BookieTextField: UITextField {
         return UIEdgeInsets(top: 0, left: 16, bottom: 0, right: horizontalPadding)
     }
     
-    override init(frame: CGRect) {
+    init(frame: CGRect = .zero, placeholder: String) {
         super.init(frame: frame)
+        self.placeholder = placeholder
         configure()
     }
     
@@ -28,18 +29,17 @@ class BookieTextField: UITextField {
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         
-        layer.cornerRadius          = 20
+        layer.cornerRadius          = 4
         
         textColor                   = .label
         tintColor                   = .label
         textAlignment               = .left
         font                        = UIFont.preferredFont(forTextStyle: .body)
- 
+        
         backgroundColor             = .white
         autocorrectionType          = .no
         returnKeyType               = .go
         clearButtonMode             = .whileEditing
-        placeholder                 = "Enter sth"
         
         addTarget(self, action: #selector(textFieldEditingChanged), for: .editingChanged)
     }
