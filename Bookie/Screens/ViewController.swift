@@ -19,7 +19,7 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = BookieColors.backgroundColor
+        view.backgroundColor = BookieColors.background
         
         view.addSubview(appLogoImage)
         view.addSubview(appNameLabel)
@@ -38,7 +38,6 @@ class ViewController: UIViewController{
     
     func configureAppLogoImage() {
         appLogoImage.translatesAutoresizingMaskIntoConstraints = false
-        
         
         NSLayoutConstraint.activate([
             appLogoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 170),
@@ -96,7 +95,7 @@ class ViewController: UIViewController{
             submitButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 24),
             submitButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
             submitButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
-            submitButton.heightAnchor.constraint(equalToConstant: 40)
+            submitButton.heightAnchor.constraint(equalToConstant: 35)
         ])
     }
 }

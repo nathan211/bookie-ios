@@ -18,6 +18,9 @@
 		2A5D7AF52C04B2630048FB7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D7AF42C04B2630048FB7B /* Constants.swift */; };
 		2A5D7AFC2C04B5BB0048FB7B /* BookieTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D7AFB2C04B5BB0048FB7B /* BookieTitleLabel.swift */; };
 		2A5D7B012C04BCAF0048FB7B /* BookieImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5D7B002C04BCAF0048FB7B /* BookieImageView.swift */; };
+		2ADF27C02C05D01F000AE681 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF27BF2C05D01F000AE681 /* HomeViewController.swift */; };
+		2ADF27C22C05D03F000AE681 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF27C12C05D03F000AE681 /* AccountViewController.swift */; };
+		2ADF27C42C05F05F000AE681 /* BookieBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF27C32C05F05F000AE681 /* BookieBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		2A5D7AF42C04B2630048FB7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2A5D7AFB2C04B5BB0048FB7B /* BookieTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieTitleLabel.swift; sourceTree = "<group>"; };
 		2A5D7B002C04BCAF0048FB7B /* BookieImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieImageView.swift; sourceTree = "<group>"; };
+		2ADF27BF2C05D01F000AE681 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2ADF27C12C05D03F000AE681 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		2ADF27C32C05F05F000AE681 /* BookieBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				2A5D7AFA2C04B5A10048FB7B /* Labels */,
 				2A4FDE972BF22E4E004826F2 /* BookieTextField.swift */,
 				2A4FDE992BF2304A004826F2 /* BookieButton.swift */,
+				2ADF27C32C05F05F000AE681 /* BookieBackgroundView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -115,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				2A4FDE802BF22B7F004826F2 /* ViewController.swift */,
+				2ADF27BF2C05D01F000AE681 /* HomeViewController.swift */,
+				2ADF27C12C05D03F000AE681 /* AccountViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -229,10 +238,13 @@
 				2A4FDE812BF22B7F004826F2 /* ViewController.swift in Sources */,
 				2A4FDE7D2BF22B7F004826F2 /* AppDelegate.swift in Sources */,
 				2A4FDE982BF22E4E004826F2 /* BookieTextField.swift in Sources */,
+				2ADF27C02C05D01F000AE681 /* HomeViewController.swift in Sources */,
 				2A5D7AFC2C04B5BB0048FB7B /* BookieTitleLabel.swift in Sources */,
 				2A5D7AF52C04B2630048FB7B /* Constants.swift in Sources */,
 				2A4FDE7F2BF22B7F004826F2 /* SceneDelegate.swift in Sources */,
+				2ADF27C42C05F05F000AE681 /* BookieBackgroundView.swift in Sources */,
 				2A5D7AF32C04B20A0048FB7B /* UIColorExtension.swift in Sources */,
+				2ADF27C22C05D03F000AE681 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

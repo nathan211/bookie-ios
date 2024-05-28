@@ -29,7 +29,7 @@ class BookieTextField: UITextField {
     private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         
-        layer.cornerRadius          = 4
+        layer.cornerRadius          = 20
         
         textColor                   = .label
         tintColor                   = .label

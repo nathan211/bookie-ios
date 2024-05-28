@@ -29,7 +29,7 @@ class BookieButton: UIButton {
         configuration = .gray()
         configuration?.cornerStyle = .medium
         translatesAutoresizingMaskIntoConstraints = false
-        layer.cornerRadius = 4
+        layer.cornerRadius = 18
         layer.masksToBounds = true
     }
     
