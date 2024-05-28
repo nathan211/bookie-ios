@@ -94,7 +94,6 @@
 				2A4FDE972BF22E4E004826F2 /* BookieTextField.swift */,
 				2A4FDE992BF2304A004826F2 /* BookieButton.swift */,
 				2ADF27C32C05F05F000AE681 /* BookieBackgroundView.swift */,
-				2ADF27C52C060137000AE681 /* ManagementSectionView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -124,9 +123,9 @@
 		2A4FDE942BF22D53004826F2 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2ADF27C72C060B27000AE681 /* Account */,
 				2A4FDE802BF22B7F004826F2 /* ViewController.swift */,
 				2ADF27BF2C05D01F000AE681 /* HomeViewController.swift */,
-				2ADF27C12C05D03F000AE681 /* AccountViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -164,6 +163,39 @@
 				2A5D7B002C04BCAF0048FB7B /* BookieImageView.swift */,
 			);
 			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		2ADF27C72C060B27000AE681 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF27CA2C060BD1000AE681 /* Controllers */,
+				2ADF27C92C060BCA000AE681 /* Models */,
+				2ADF27C82C060B37000AE681 /* Subviews */,
+				2ADF27C12C05D03F000AE681 /* AccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2ADF27C82C060B37000AE681 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				2ADF27C52C060137000AE681 /* ManagementSectionView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		2ADF27C92C060BCA000AE681 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2ADF27CA2C060BD1000AE681 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
