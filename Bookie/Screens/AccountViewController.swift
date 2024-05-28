@@ -13,6 +13,7 @@ class AccountViewController: UIViewController {
     let profileImageView = UIImageView()
     let nameLabel = UILabel()
     let signOutButton = UIButton()
+    let managementSectionView = ManagementSectionView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class AccountViewController: UIViewController {
         setupCustomBackgroundView()
         setupProfileSection()
         setupSignOutButton()
+        setupManagementSectionView()
     }
     
     private func setupCustomBackgroundView() {
@@ -40,23 +42,23 @@ class AccountViewController: UIViewController {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         
         profileImageView.contentMode = .scaleAspectFill
-        profileImageView.layer.cornerRadius = 50
+        profileImageView.layer.cornerRadius = 35
         profileImageView.clipsToBounds = true
         profileImageView.backgroundColor = .lightGray // Placeholder
         
         nameLabel.text = "Viet Phi Nguyen"
         nameLabel.textColor = .white
-        nameLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 16)
         nameLabel.textAlignment = .center
         
         customBackgroundView.addSubview(profileImageView)
         customBackgroundView.addSubview(nameLabel)
         
         NSLayoutConstraint.activate([
-            profileImageView.topAnchor.constraint(equalTo: customBackgroundView.safeAreaLayoutGuide.topAnchor, constant: 20),
+            profileImageView.topAnchor.constraint(equalTo: customBackgroundView.safeAreaLayoutGuide.topAnchor, constant: 10),
             profileImageView.centerXAnchor.constraint(equalTo: customBackgroundView.centerXAnchor),
-            profileImageView.widthAnchor.constraint(equalToConstant: 100),
-            profileImageView.heightAnchor.constraint(equalToConstant: 100),
+            profileImageView.widthAnchor.constraint(equalToConstant: 70),
+            profileImageView.heightAnchor.constraint(equalToConstant: 70),
             
             nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 10),
             nameLabel.centerXAnchor.constraint(equalTo: customBackgroundView.centerXAnchor)
@@ -76,7 +78,18 @@ class AccountViewController: UIViewController {
             signOutButton.bottomAnchor.constraint(equalTo: customBackgroundView.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             signOutButton.leadingAnchor.constraint(equalTo: customBackgroundView.leadingAnchor, constant: 20),
             signOutButton.trailingAnchor.constraint(equalTo: customBackgroundView.trailingAnchor, constant: -20),
-            signOutButton.heightAnchor.constraint(equalToConstant: 50)
+            signOutButton.heightAnchor.constraint(equalToConstant: 35)
         ])
     }
+    
+    private func setupManagementSectionView() {
+            managementSectionView.translatesAutoresizingMaskIntoConstraints = false
+            customBackgroundView.addSubview(managementSectionView)
+            
+            NSLayoutConstraint.activate([
+                managementSectionView.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 0),
+                managementSectionView.leadingAnchor.constraint(equalTo: customBackgroundView.leadingAnchor, constant: 20),
+                managementSectionView.trailingAnchor.constraint(equalTo: customBackgroundView.trailingAnchor, constant: -20)
+            ])
+        }
 }

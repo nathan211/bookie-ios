@@ -25,8 +25,8 @@ class BookieBackgroundView: UIView {
     }
 
     private func setupViews() {
-        topView.backgroundColor = BookieColors.primary // Replace with your top color
-        bottomView.backgroundColor = BookieColors.background // Replace with your bottom color
+        topView.backgroundColor = BookieColors.primary
+        bottomView.backgroundColor = BookieColors.background
 
         bottomView.layer.cornerRadius = 25
         bottomView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
@@ -44,7 +44,7 @@ class BookieBackgroundView: UIView {
             topView.topAnchor.constraint(equalTo: topAnchor),
             topView.leadingAnchor.constraint(equalTo: leadingAnchor),
             topView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            topView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.3), // Adjust the height proportion as needed
+            topView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.3),
 
             bottomView.topAnchor.constraint(equalTo: topView.bottomAnchor),
             bottomView.leadingAnchor.constraint(equalTo: leadingAnchor),
